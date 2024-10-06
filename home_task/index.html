@@ -7,9 +7,67 @@
       content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+  <style>
+    .colored {
+      background-color: yellow;
+    }
+  </style>
   <body>
-    <p>Hometask 1</p>
-    <h1>This is Hometask</h1>
+    <h1>Hometask</h1>
+    <h3>Form</h3>
+    <div>
+      <input
+        id="textInput"
+        type="text"
+        placeholder="Enter a text" />
+      <button
+        id="button"
+        type="button">
+        Click!
+      </button>
+    </div>
+    <h3>Another version</h3>
+    <div id="formContainer">
+      <button id="anotherButton">Create form</button>
+    </div>
+    <h3>Calculator</h3>
+    <div class="calculator">
+      <input id="number-a" />
+      <select>
+        <option
+          id="increment"
+          value="+">
+          +
+        </option>
+        <option
+          id="decrement"
+          value="-">
+          -
+        </option>
+        <option
+          id="multiplication"
+          value="*">
+          *
+        </option>
+        <option
+          id="division"
+          value="/">
+          /
+        </option>
+      </select>
+      <input id="number-b" />
+      <button
+        id="result"
+        type="button">
+        =
+      </button>
+      <span id="result-span"></span>
+    </div>
+    <h3>Table</h3>
+    <div
+      id="table-container"
+      style="display: flex; flex-direction: column"></div>
     <script src="./index.js"></script>
+    <script src="./actions.js"></script>
   </body>
 </html>
