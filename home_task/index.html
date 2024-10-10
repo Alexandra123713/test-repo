@@ -6,16 +6,14 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="./styles.css" />
   </head>
-  <style>
-    .colored {
-      background-color: yellow;
-    }
-  </style>
   <body>
-    <h1>Hometask</h1>
+    <h1>Hometasks</h1>
     <h3>Form</h3>
-    <div>
+    <div class="form-container">
       <input
         id="textInput"
         type="text"
@@ -27,13 +25,18 @@
       </button>
     </div>
     <h3>Another version</h3>
-    <div id="formContainer">
+    <div
+      id="formContainer"
+      class="form-container">
       <button id="anotherButton">Create form</button>
     </div>
     <h3>Calculator</h3>
     <div class="calculator">
-      <input id="number-a" />
-      <select>
+      <input
+        id="number-a"
+        placeholder="Enter a number" />
+      <label for="select"> Select operation</label>
+      <select id="select">
         <option
           id="increment"
           value="+">
@@ -55,7 +58,9 @@
           /
         </option>
       </select>
-      <input id="number-b" />
+      <input
+        id="number-b"
+        placeholder="Enter a number" />
       <button
         id="result"
         type="button">
@@ -64,9 +69,13 @@
       <span id="result-span"></span>
     </div>
     <h3>Table</h3>
-    <div
-      id="table-container"
-      style="display: flex; flex-direction: column"></div>
+    <div id="tableContainer"></div>
+    <h3>Store</h3>
+    <div id="storeContainer"></div>
+    <h3>Wishlist</h3>
+    <div id="wishlistContainer">
+      <h4 id="emptyList">Wishlist is empty</h4>
+    </div>
     <script src="./index.js"></script>
     <script src="./actions.js"></script>
   </body>
